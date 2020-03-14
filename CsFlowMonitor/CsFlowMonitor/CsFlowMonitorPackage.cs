@@ -36,6 +36,7 @@ namespace CsFlowMonitor
         /// </summary>
         public const string PackageGuidString = "015b7268-1a6f-4a0d-9f8f-7ab389f5a86c";
 
+        DTE2 _dte2;
         DebuggerEvents _debuggerEvents;
 
         #region Package Members
@@ -54,14 +55,20 @@ namespace CsFlowMonitor
             await JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await ObjectDiffWindowCommand.InitializeAsync(this);
 
-            var _dte2 = GetGlobalService(typeof(DTE)) as DTE2;
+            _dte2 = GetGlobalService(typeof(DTE)) as DTE2;
             _debuggerEvents = _dte2.Events.DebuggerEvents;
             _debuggerEvents.OnEnterBreakMode += EnterBreakModeHandler;
         }
 
-        private static void EnterBreakModeHandler(dbgEventReason Reason, ref dbgExecutionAction ExecutionAction)
+        private void EnterBreakModeHandler(dbgEventReason Reason, ref dbgExecutionAction ExecutionAction)
         {
-
+            var locals = _dte2.Debugger.CurrentStackFrame.Locals;
+            foreach (Expression local in locals)
+            {
+                var name = local.Name;
+                var val = local.Value;
+                var type = local.Type;
+            }
         }
 
         #endregion

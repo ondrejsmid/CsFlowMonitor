@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsFlowMonitor", "CsFlowMonitor\CsFlowMonitor.csproj", "{4F861E8E-94C3-40B5-9659-F06928DA61F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggerUtils", "DebuggerUtils\DebuggerUtils.csproj", "{68798ECC-3550-450F-BC0C-0D6FE97AD46D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos", "Demos\Demos.csproj", "{2AEC416F-3DAB-4FAC-B8BD-86D3D69771EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4F861E8E-94C3-40B5-9659-F06928DA61F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F861E8E-94C3-40B5-9659-F06928DA61F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F861E8E-94C3-40B5-9659-F06928DA61F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68798ECC-3550-450F-BC0C-0D6FE97AD46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68798ECC-3550-450F-BC0C-0D6FE97AD46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68798ECC-3550-450F-BC0C-0D6FE97AD46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68798ECC-3550-450F-BC0C-0D6FE97AD46D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEC416F-3DAB-4FAC-B8BD-86D3D69771EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEC416F-3DAB-4FAC-B8BD-86D3D69771EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEC416F-3DAB-4FAC-B8BD-86D3D69771EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEC416F-3DAB-4FAC-B8BD-86D3D69771EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
